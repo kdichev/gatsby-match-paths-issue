@@ -4,7 +4,7 @@ const locales = ["en", "da-dk", "bg-bg", "sv-se", "ro-ro"];
 
 exports.createPages = ({ actions }) => {
   locales.forEach((locale) => {
-    const slugs = Array.from({ length: 5000 }, (v, i) => i);
+    const slugs = Array.from({ length: 1000 }, (v, i) => i);
     slugs.forEach((slug) => {
       actions.createPage({
         path: `/${locale}/${slug}`,
